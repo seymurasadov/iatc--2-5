@@ -9,9 +9,13 @@ public class Movie {
 	public Genre genre;
 	public Raiting raiting;
 	
-	public Movie(String name, Short duration, String createdFrom) {
-		this(name, duration, createdFrom, 
-				new Employer("Leanardo", "DiKaprio", 51), new Genre(), new Raiting());
+	public Movie(String name, Short duration, String createdFrom,
+			Genre genre, Raiting raiting) {
+		this.name = name;
+		this.duration = duration;
+		this.createdFrom = createdFrom;
+		this.genre = genre;
+		this.raiting = raiting;
 	}
 	
 	public Movie(String name, Short duration, String createdFrom, 
